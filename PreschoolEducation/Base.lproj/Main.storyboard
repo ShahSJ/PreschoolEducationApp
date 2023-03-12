@@ -1,26 +1,364 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="ViewController" customModule="PreschoolEducation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf1-ub-fNd">
+                                <rect key="frame" x="0.0" y="647" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5h0-29-4vg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-DQ-vMk" userLabel="Numbers">
+                                <rect key="frame" x="5" y="352" width="310" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp9-4f-Z6x">
+                                        <rect key="frame" x="187" y="63" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="9" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMK-qN-3hY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taF-NA-WQ3">
+                                        <rect key="frame" x="249" y="63" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="0" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRP-ZT-UqO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upJ-2P-H2a">
+                                        <rect key="frame" x="125" y="63" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="8" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6m-Tx-TUG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9N-gi-jrS">
+                                        <rect key="frame" x="63" y="63" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="7" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrJ-2J-gPT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0u-vq-vL4">
+                                        <rect key="frame" x="1" y="63" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="6" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWV-hS-xyX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPU-HM-AHP">
+                                        <rect key="frame" x="249" y="1" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="5" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5V-2S-kl5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIX-uI-UvH">
+                                        <rect key="frame" x="187" y="1" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="4" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vg-Bc-eXK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjQ-gd-Gc8">
+                                        <rect key="frame" x="125" y="1" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="3" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xG-9W-7bi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-e2-pVe">
+                                        <rect key="frame" x="63" y="1" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="2" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ynv-q8-cYD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKt-Tx-FK9">
+                                        <rect key="frame" x="1" y="1" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <state key="normal" title="1" backgroundImage="IconBackground.png"/>
+                                        <connections>
+                                            <action selector="Numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWM-7H-txw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-Y6-qnZ" userLabel="TOP">
+                                <rect key="frame" x="0.0" y="14" width="320" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjn-xr-vBX">
+                                        <rect key="frame" x="-1" y="0.0" width="320" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sun With Clouds.png" translatesAutoresizingMaskIntoConstraints="NO" id="rAz-tf-YxR">
+                                        <rect key="frame" x="-1" y="0.0" width="320" height="189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 + 2 =" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-1b-zav">
+                                        <rect key="frame" x="106" y="58" width="113" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SadCloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qo1-oh-VsL">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePM-g4-1kl">
+                                        <rect key="frame" x="0.0" y="-7" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Mute" image="Mute.png"/>
+                                        <connections>
+                                            <action selector="Mute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bg6-Qj-d1y"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsC-AC-sUQ">
+                                        <rect key="frame" x="0.0" y="-7" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="unmute" image="Unmute.png"/>
+                                        <connections>
+                                            <action selector="Unmute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rpd-Ym-a7f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7m-O8-S9g" userLabel="Stars">
+                                <rect key="frame" x="0.0" y="196" width="320" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="5QK-hZ-b9p" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="BpJ-pO-z5v" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="rWH-i0-NdM" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="qyh-16-65O" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="t2d-HT-WQ0" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-ec-BBW" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="B4d-nQ-Rqf" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="IoU-Sw-n2e" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ni7-OQ-GoY" customClass="Cloud" customModule="PreschoolEducation" customModuleProvider="target">
+                                        <rect key="frame" x="130" y="71" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74511207459999995" green="0.74511207459999995" blue="0.74511207459999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5h0-29-4vg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2C9-Qr-I9y"/>
+                            <constraint firstItem="5h0-29-4vg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VsN-yE-7sn"/>
+                            <constraint firstAttribute="trailing" secondItem="5h0-29-4vg" secondAttribute="trailing" id="W6K-AG-PBo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5h0-29-4vg" secondAttribute="bottom" id="gb9-3m-5T6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XK1-Vt-DkC"/>
+                    <connections>
+                        <outlet property="Answer" destination="Cf1-ub-fNd" id="o6f-TH-UY0"/>
+                        <outlet property="MuteMusic" destination="ePM-g4-1kl" id="WV8-DH-Hrd"/>
+                        <outlet property="Random1" destination="gXh-1b-zav" id="2ik-Ny-T0B"/>
+                        <outlet property="SadCloud" destination="Qo1-oh-VsL" id="qqd-iY-iVb"/>
+                        <outlet property="Stars" destination="b7m-O8-S9g" id="0bv-uc-2n0"/>
+                        <outlet property="SunWithClouds" destination="rAz-tf-YxR" id="C0a-lF-OeG"/>
+                        <outlet property="UnmuteMusic" destination="PsC-AC-sUQ" id="L5C-AX-2GJ"/>
+                        <outlet property="star1" destination="5QK-hZ-b9p" id="J7R-bM-RXA"/>
+                        <outlet property="star2" destination="BpJ-pO-z5v" id="XnS-la-TEC"/>
+                        <outlet property="star3" destination="rWH-i0-NdM" id="1vK-zY-tYv"/>
+                        <outlet property="star4" destination="qyh-16-65O" id="Mjc-ZX-XQX"/>
+                        <outlet property="star5" destination="t2d-HT-WQ0" id="nEo-Tx-xMe"/>
+                        <outlet property="star6" destination="8jA-ec-BBW" id="K78-Qb-3RM"/>
+                        <outlet property="star7" destination="B4d-nQ-Rqf" id="YGs-PP-AZf"/>
+                        <outlet property="star8" destination="IoU-Sw-n2e" id="z5F-hQ-wNH"/>
+                        <outlet property="star9" destination="Ni7-OQ-GoY" id="OGl-gT-MAU"/>
+                        <segue destination="i1C-4C-WWA" kind="show" identifier="correct" id="u5u-98-pfn"/>
+                        <segue destination="V3B-B6-9G4" kind="popoverPresentation" identifier="incorrect" popoverAnchorView="Tjn-xr-vBX" id="TG8-y0-XNA">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-184" y="385"/>
+        </scene>
+        <!--Incorrect View Controller-->
+        <scene sceneID="lbe-7N-4gN">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="V3B-B6-9G4" customClass="IncorrectViewController" customModule="PreschoolEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MHs-kk-NqX"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMi-XY-aNv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWC-xX-F6m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SadCloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAB-Do-GBy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WG-Pf-QzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="652" y="740"/>
+        </scene>
+        <!--Correct View Controller-->
+        <scene sceneID="yGG-UJ-fI4">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="i1C-4C-WWA" customClass="CorrectViewController" customModule="PreschoolEducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YUy-bA-oOW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tqv-Ay-yaO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fqU-Dw-pRC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-sT-Ezb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlayButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="NcA-Ff-IMD">
+                                <rect key="frame" x="227" y="401" width="93" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMA-cl-uok">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="0.98198976599999999" blue="0.22001234929999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Next:" destination="i1C-4C-WWA" eventType="touchUpInside" id="WCi-cd-Ay8"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun smiling.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSb-Lj-kWe">
+                                <rect key="frame" x="10" y="119.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AK0-CJ-J7f"/>
+                                    <constraint firstAttribute="width" secondItem="HSb-Lj-kWe" secondAttribute="height" multiplier="1:1" id="BjH-Wj-PlU"/>
+                                    <constraint firstAttribute="width" constant="300" id="nKX-pu-WIE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjF-Jl-kTk">
+                                <rect key="frame" x="10" y="46" width="300" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.98198976599999999" blue="0.22001234929999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Tqv-Ay-yaO" firstAttribute="top" secondItem="Ikp-sT-Ezb" secondAttribute="bottom" id="3Vy-Ee-79k"/>
+                            <constraint firstItem="WjF-Jl-kTk" firstAttribute="trailing" secondItem="HSb-Lj-kWe" secondAttribute="trailing" id="8AP-Zf-JsM"/>
+                            <constraint firstItem="AMA-cl-uok" firstAttribute="leading" secondItem="fqU-Dw-pRC" secondAttribute="leading" id="I10-3r-ocN"/>
+                            <constraint firstItem="Tqv-Ay-yaO" firstAttribute="top" secondItem="AMA-cl-uok" secondAttribute="bottom" id="Mec-kZ-7ds"/>
+                            <constraint firstAttribute="trailing" secondItem="AMA-cl-uok" secondAttribute="trailing" id="WeG-vb-77U"/>
+                            <constraint firstItem="HSb-Lj-kWe" firstAttribute="top" secondItem="WjF-Jl-kTk" secondAttribute="bottom" constant="9" id="a2d-6G-3D4"/>
+                            <constraint firstAttribute="trailing" secondItem="Ikp-sT-Ezb" secondAttribute="trailing" id="gai-gb-fwm"/>
+                            <constraint firstItem="WjF-Jl-kTk" firstAttribute="leading" secondItem="HSb-Lj-kWe" secondAttribute="leading" id="h6Q-L7-43k"/>
+                            <constraint firstItem="HSb-Lj-kWe" firstAttribute="centerY" secondItem="fqU-Dw-pRC" secondAttribute="centerY" constant="29.5" id="iWM-cj-178"/>
+                            <constraint firstItem="HSb-Lj-kWe" firstAttribute="centerX" secondItem="fqU-Dw-pRC" secondAttribute="centerX" id="mb8-I8-mlT"/>
+                            <constraint firstItem="Ikp-sT-Ezb" firstAttribute="top" secondItem="fqU-Dw-pRC" secondAttribute="top" id="n2f-3X-dGe"/>
+                            <constraint firstItem="Ikp-sT-Ezb" firstAttribute="leading" secondItem="fqU-Dw-pRC" secondAttribute="leading" id="ouR-FJ-1GW"/>
+                            <constraint firstItem="AMA-cl-uok" firstAttribute="top" secondItem="fqU-Dw-pRC" secondAttribute="top" id="r0x-Ga-cdR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PlayButton" destination="NcA-Ff-IMD" id="BtT-k1-HF8"/>
+                        <outlet property="RN1" destination="WjF-Jl-kTk" id="RMz-wJ-GRB"/>
+                        <outlet property="Sun" destination="HSb-Lj-kWe" id="4bd-7p-VK6"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="home" id="83p-JZ-MCH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uru-Qi-7mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.625" y="20"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background2.jpg" width="535" height="322"/>
+        <image name="IconBackground.png" width="60" height="60"/>
+        <image name="Mute.png" width="512" height="512"/>
+        <image name="PlayButton.png" width="600" height="583"/>
+        <image name="SadCloud.png" width="929" height="860"/>
+        <image name="Star 2.png" width="512" height="512"/>
+        <image name="Sun With Clouds.png" width="2835" height="2295"/>
+        <image name="Unmute.png" width="300" height="300"/>
+        <image name="sun smiling.png" width="748" height="751"/>
+    </resources>
 </document>
